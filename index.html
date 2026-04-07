@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Gomez - Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+    <div class="p-8">
+        
+        <!-- Nav -->
+        <nav class="flex justify-between items-center mb-8">
+            <h1 class="text-xl font-bold">MG</h1>
+            <div class="flex gap-4 text-sm">
+                <p>Sobre mí</p>
+                <p>Experiencia</p>
+                <p>Educación</p>
+                <p >Contacto</p>
+                <a href="CV_Maria_Gomez.pdf" download class="btn-descargar">Descargar CV</a>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-12">
+            <div>
+                <h1 class="text-5xl font-bold">MARIA GÓMEZ<br>GUZMÁN</h1>
+                <p class="text-gray-600 mt-2">Desarrolladora de software en formación | Backend</p>
+                <p class="text-gray-600 mt-2 font-bold">Bogotá,Colombia</p>
+            </div>
+
+        </div>
+
+        <!-- Sobre mí -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">Sobre mí</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Desarrollo soluciones a través del código, con interés en la creación de aplicaciones funcionales. 
+                Mis conocimientos incluyen Java, Spring Boot, programación orientada a objetos y bases de datos.
+            </p>
+
+            <!-- Proyectos -->
+            <div class="grid grid-cols-3 gap-4">
+                <div class="proyecto-card">
+                    <h3 class="text-sm text-gray-600">Proyecto 1:</h3>
+                    <h4 class="font-bold mb-2">Contador de numeros</h4>
+                    <div class="flex gap-2 mb-2">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <h3 class="text-sm text-gray-600">Proyecto 2:</h3>
+                    <h4 class="font-bold mb-2">Inventory Management</h4>
+                    <div class="flex gap-2 mb-2">
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <h3 class="text-sm text-gray-600">Proyecto 3:</h3>
+                    <h4 class="font-bold mb-2">Aurea Esmeralda</h4>
+                    <div class="flex gap-2 mb-2">
+                        <span class="tag">Java</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secciones -->
+        <div class="grid grid-cols-3 gap-6">
+            <div>
+                <h2 class="text-xl font-bold mb-4">Experiencia</h2>
+                <div class="mb-4">
+                    <h3 class="font-bold">Analista de monitoreo</h3>
+                    <p class="text-sm text-gray-600">Inetum</p>
+                    <p class="text-sm text-gray-600">jun 2024 - sept 2025</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-4">Educación</h2>
+                <div class="mb-4">
+                    <h3 class="font-bold text-sm">Jr Full-Stack Java</h3>
+                    <p class="text-sm text-gray-600">Generation Colombia</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-sm">Ingeniería de sistemas</h3>
+                    <p class="text-sm text-gray-600">U. de Cartagena</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-4">Certificaciones</h2>
+                <p class="text-sm mb-1">-Java Foundations</p>
+                <p class="text-sm mb-1">-Github Foundations</p>
+                <p class="text-sm mb-1">-Java programming</p>
+                <p class="text-sm mb-1">-Agile Explorer</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 pt-4 border-t text-center text-sm text-gray-600">
+            <p>"Código simple, soluciones claras."</p>
+        </footer>
+    </div>
+</body>
+</html>
