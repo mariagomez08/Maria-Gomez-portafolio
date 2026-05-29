@@ -13,8 +13,14 @@
   --dark: #5b1122;
 
   --shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+  --cat-cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M8 22 L16 8 L28 18 L32 14 L36 18 L48 8 L56 22 C56 34 48 44 32 44 C16 44 8 34 8 22 Z' fill='%231d4a52'/><circle cx='24' cy='30' r='3' fill='%23ffffff'/><circle cx='40' cy='30' r='3' fill='%23ffffff'/><path d='M22 38 Q32 44 42 38' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round'/></svg>") 16 16, auto;
+
 }
 
+html, body, a, button {
+  cursor: var(--cat-cursor);
+}
 * {
   margin: 0;
   padding: 0;
@@ -505,3 +511,4 @@ nav a {
   }
 
 }
+
