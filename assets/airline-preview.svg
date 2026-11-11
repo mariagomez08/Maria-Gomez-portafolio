@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+<rect width="900" height="520" fill="#241329"/><rect x="26" y="24" width="848" height="472" rx="16" fill="#fffdf8"/>
+<rect x="26" y="24" width="848" height="58" rx="16" fill="#713b70"/><circle cx="57" cy="53" r="7" fill="#ef7842"/><circle cx="82" cy="53" r="7" fill="#e95d83"/><circle cx="107" cy="53" r="7" fill="#f4e8cf"/><text x="145" y="60" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">AEROLÍNEA API</text>
+<rect x="48" y="105" width="804" height="54" rx="8" fill="#f4e8cf"/><text x="72" y="139" fill="#241329" font-family="Arial" font-size="19" font-weight="bold">API REST · Reservas, pasajeros y vuelos</text>
+<text x="55" y="198" fill="#713b70" font-family="Arial" font-size="15" font-weight="bold">ENDPOINTS</text>
+<g font-family="Arial" font-size="16"><rect x="48" y="218" width="804" height="58" rx="7" fill="#fbf7ef"/><rect x="68" y="232" width="64" height="30" rx="5" fill="#d9ebdf"/><text x="82" y="253" fill="#24633d" font-weight="bold">GET</text><text x="158" y="253" fill="#241329">/api/reservas</text><text x="720" y="253" fill="#665966" font-size="13">Consultar</text>
+<rect x="48" y="289" width="804" height="58" rx="7" fill="#fbf7ef"/><rect x="68" y="303" width="64" height="30" rx="5" fill="#d9ebdf"/><text x="82" y="324" fill="#24633d" font-weight="bold">POST</text><text x="158" y="324" fill="#241329">/api/reservas</text><text x="720" y="324" fill="#665966" font-size="13">Registrar</text>
+<rect x="48" y="360" width="804" height="58" rx="7" fill="#fbf7ef"/><rect x="68" y="374" width="64" height="30" rx="5" fill="#f7dfd0"/><text x="82" y="395" fill="#a44b22" font-weight="bold">PUT</text><text x="158" y="395" fill="#241329">/api/reservas/{id}</text><text x="720" y="395" fill="#665966" font-size="13">Actualizar</text>
+<rect x="48" y="431" width="804" height="42" rx="7" fill="#f4dce3"/><text x="68" y="458" fill="#713b70" font-family="Arial" font-size="14">Controladores · Servicios · DTO · Validación</text></g>
+</svg>
