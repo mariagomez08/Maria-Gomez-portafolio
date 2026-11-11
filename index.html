@@ -1,275 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>María Gómez | Backend Developer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241329">
+  <meta name="description" content="Portafolio de María Gómez Guzmán, desarrolladora backend junior. Proyectos con Java, Spring Boot, JavaScript y PostgreSQL.">
+  <meta property="og:title" content="María Gómez | Backend Developer">
+  <meta property="og:description" content="Desarrollo backend, APIs y soluciones de software.">
+  <meta property="og:type" content="website">
+  <title>María Gómez | Backend Developer</title>
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="María Gómez, inicio">
+      <img src="./assets/logo.svg" alt="" width="46" height="46">
+      <span>MG<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a href="#about" data-i18n="navAbout">Sobre mí</a>
+      <a href="#stack" data-i18n="navStack">Tecnologías</a>
+      <a href="#projects" data-i18n="navProjects">Proyectos</a>
+      <a href="#experience" data-i18n="navExperience">Experiencia</a>
+      <a href="#education" data-i18n="navEducation">Formación</a>
+      <a href="#contact" class="nav-contact" data-i18n="navContact">Contacto</a>
+      <button class="language-toggle" type="button" aria-label="Switch to English">EN</button>
+    </nav>
+  </header>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <a href="/" class="logo-container">
-            <img src="./assets/logo.svg" alt="Maria Gomez Logo" class="logo">
-        </a>
-
-        <nav>
-            <a href="#about">Sobre mí</a>
-            <a href="#experience">Experiencia</a>
-            <a href="#education">Educación</a>
-            <a href="#certifications">Certificaciones</a>
-            <a href="#contact" class="nav-btn">Contacto</a>
-        </nav>
-    </header>
-
-
-    <!-- HERO -->
-    <section class="hero">
-
-        <div class="hero-text">
-            <p class="hero-label">Backend Developer Junior</p>
-
-            <h1>
-                MARÍA GÓMEZ<br>
-                GUZMÁN
-            </h1>
-
-            <p class="hero-description">
-                Construyo APIs y sistemas backend escalables.
-                Apasionada por la arquitectura limpia y el cloud computing
-            </p>
-            <br>
-            
-            
-            <a href="https://github.com/mariagomez08" target="_blank" class="contact-btn-hero github-contact-btn"><i class="fa-brands fa-github contact-icon" aria-hidden="true"></i>Ver
-                github</a>
-
-
+  <main id="main">
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">Desarrolladora Backend Junior</span></p>
+        <h1>María Gómez<br><span class="gradient-text">Guzmán.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Construyo soluciones backend y APIs. Combino mi formación en desarrollo de software con experiencia en operación y soporte de sistemas productivos.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects" data-i18n="heroProjects">Ver proyectos</a>
+          <a class="button button-secondary" href="https://github.com/mariagomez08" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
-
-
-        <div class="hero-card">
-            <div class="avatar-ring">
-                <img src="assets/1713354671360.jpeg" alt="María Gómez">
-            </div>
-
-            <p class="updated">Última actualización: 2026</p>
+        <p class="hero-note" data-i18n="heroNote">Bogotá, Colombia · Disponible para oportunidades junior</p>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="./assets/1713354671360.jpeg" alt="Retrato de María Gómez">
         </div>
-
+        <span class="visual-sticker sticker-top" data-i18n="stickerBackend">BACKEND<br>DEVELOPER</span>
+        <span class="visual-sticker sticker-bottom">JAVA · API · SQL</span>
+        <span class="visual-spark spark-one">✳</span><span class="visual-spark spark-two">✳</span>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Desplazarse a Sobre mí">↓</a>
     </section>
 
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-
-        <div class="section-title">
-            <h2>Sobre mí</h2>
+    <section class="content-section section-shell" id="about">
+      <div class="section-heading"><p class="eyebrow" data-i18n="aboutKicker">01 / PERFIL</p><h2 data-i18n="aboutTitle">Sobre mí<span>.</span></h2></div>
+      <div class="about-layout">
+        <p class="about-lead" data-i18n="aboutLead">Me interesa crear software útil, comprensible y mantenible.</p>
+        <div class="about-detail">
+          <p data-i18n="aboutText">Soy desarrolladora backend junior, graduada de Ingeniería de Sistemas. Tengo experiencia en operación de sistemas empresariales, monitoreo de servicios críticos y gestión de incidencias en entornos productivos. Actualmente enfoco mi desarrollo profesional en Java, Spring Boot, bases de datos y construcción de APIs REST.</p>
+          <a class="text-link" href="https://www.linkedin.com/in/maria-de-los-angeles--gomez-guzman-desarrolladora-junior/" target="_blank" rel="noopener noreferrer" data-i18n="linkedinLink">Conecta conmigo en LinkedIn ↗</a>
         </div>
-
-        <p class="about-text">
-            Soy desarrolladora backend en formación con interés en la construcción
-            de aplicaciones escalables y funcionales.
-
-            Tengo experiencia previa en monitoreo de sistemas, gestión de incidencias
-            y soporte en entornos productivos.
-
-            Actualmente trabajo principalmente con Java, Spring Boot,
-            PostgreSQL y APIs REST.
-        </p>
-
-
-        <!-- PROJECTS -->
-        <div class="projects-grid">
-
-            <article class="project-card">
-
-                <h3>Salitre Mágico Management System</h3>
-
-                <p>
-                    Sistema web para la gestión operativa de un parque de diversiones,
-                    incluyendo administración de clientes, empleados, atracciones,
-                    control de acceso.
-                </p>
-
-                <div class="tags">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>PostgreSQL</span>
-                    <span>Thymeleaf</span>
-                    <span>Hibernate</span>
-                    <span>Bootstrap</span>
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="#" target="_blank" class="demo-btn">
-                        Demo
-                    </a>
-
-                    <a href="https://github.com/mariagomez08/salitremagico.git" target="_blank" class="github-btn">
-                        GitHub
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <h3>NASA APOD Explorer</h3>
-
-                <p>
-                    Aplicación web que consume la API oficial de la NASA para mostrar
-                    la imagen astronómica del día con información dinámica y diseño responsive.
-                </p>
-
-                <div class="tags">
-                    <span>JavaScript</span>
-                    <span>NASA API</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
-
-                <div class="project-buttons">
-                    <a href="https://mariagomez08.github.io/NASA-APOD-Explorer/" target="_blank" class="demo-btn">
-                        Demo
-                    </a>
-
-                    <a href="https://github.com/mariagomez08/NASA-APOD-Explorer" target="_blank" class="github-btn">
-                        GitHub
-                    </a>
-                </div>
-
-            </article>
-
-
-
-        </div>
-
+      </div>
     </section>
 
-
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-
-        <div class="section-title">
-            <h2>Experiencia</h2>
-        </div>
-
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    Junio 2024 - Sept 2025
-                </div>
-
-                <div class="timeline-content">
-                    <h3>Analista de Operaciones TI</h3>
-                    <h4>Inetum · Bogotá</h4>
-
-                    <p>
-                        Monitoreo de sistemas productivos, gestión de incidencias,
-                        seguimiento de jobs y automatización básica con Bash.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
+    <section class="content-section section-shell" id="stack">
+      <div class="section-heading"><p class="eyebrow" data-i18n="stackKicker">02 / HERRAMIENTAS</p><h2 data-i18n="stackTitle">Tecnologías<span>.</span></h2></div>
+      <div class="stack-grid">
+        <article class="stack-card"><span class="stack-number">01</span><h3 data-i18n="stackBackend">Backend</h3><p>Java · Spring Boot · Spring Data JPA · Hibernate · JavaScript</p></article>
+        <article class="stack-card"><span class="stack-number">02</span><h3 data-i18n="stackData">Datos</h3><p>PostgreSQL · MySQL · SQL</p></article>
+        <article class="stack-card"><span class="stack-number">03</span><h3 data-i18n="stackQuality">Pruebas y calidad</h3><p>JUnit · Mockito · Postman</p></article>
+        <article class="stack-card"><span class="stack-number">04</span><h3 data-i18n="stackTools">Herramientas</h3><p>Git · GitHub · Maven · Gradle · Jira · Bash básico</p></article>
+      </div>
+      <p class="stack-footnote" data-i18n="stackNote">Tecnologías y herramientas trabajadas durante mi formación y proyectos personales.</p>
     </section>
 
-
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-
-        <div class="section-title">
-            <h2>Educación</h2>
-        </div>
-        <div class="info-card">
-            <h3>Desarrolladora Full Stack Junior</h3>
-            <p>Generation Colombia</p>
-            <span>Mar 2026 - Jun 2026</span>
-        </div>
-
-        <div class="info-card">
-            <h3>Ingeniería de Sistemas</h3>
-            <p>Universidad de Cartagena</p>
-            <span>Feb 2018 - Mar 2024</span>
-        </div>
-
-
-
-
+    <section class="content-section section-shell" id="projects">
+      <div class="section-heading section-heading-row"><div><p class="eyebrow" data-i18n="projectsKicker">03 / TRABAJO SELECCIONADO</p><h2 data-i18n="projectsTitle">Proyectos<span>.</span></h2></div><span class="section-aside" data-i18n="projectsAside">Desarrollo y aprendizaje continuo</span></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-topline"><span data-i18n="projectMain">PROYECTO PRINCIPAL</span><span class="project-status" data-i18n="statusProgress">En desarrollo</span></div>
+          <h3>Salitre Mágico<br><em>Management System</em></h3>
+          <p data-i18n="salitreDescription">Sistema web para apoyar la gestión operativa de un parque de diversiones, con módulos para clientes, empleados, atracciones y tiquetes. Proyecto en desarrollo.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>JPA / Hibernate</span><span>Thymeleaf</span></div>
+          <a class="project-link" href="https://github.com/mariagomez08/salitremagico" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-topline"><span data-i18n="projectApi">API REST</span><span class="project-status status-review" data-i18n="statusReview">Por validar</span></div>
+          <h3>Aerolínea API</h3>
+          <p data-i18n="airlineDescription">API REST para gestionar reservas, pasajeros y vuelos. Incluye controladores, servicios, DTO, validaciones y persistencia relacional.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>REST</span><span>DTO</span><span>PostgreSQL</span></div>
+          <a class="project-link" href="https://github.com/mariagomez08/aerolinea-API" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-topline"><span data-i18n="projectBackend">CONTRIBUCIÓN BACKEND</span><span class="project-status status-review" data-i18n="statusReview">Por validar</span></div>
+          <h3>NASA APOD<br><em>Explorer</em></h3>
+          <p data-i18n="nasaDescription">Mi contribución fue el desarrollo de la lógica del servidor con JavaScript y la integración con la API Astronomy Picture of the Day de NASA.</p>
+          <div class="tags"><span>JavaScript</span><span>Server-side</span><span>NASA APOD API</span></div>
+          <a class="project-link" href="https://github.com/mariagomez08/NASA-APOD-Explorer" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        </article>
+      </div>
+      <p class="projects-disclaimer" data-i18n="projectsDisclaimer">Los estados indican el nivel de avance o validación pendiente; no se presentan demos que aún no han sido verificadas.</p>
     </section>
 
-
-    <!-- CERTIFICATIONS -->
-    <section class="section" id="certifications">
-
-        <div class="section-title">
-            <h2>Cursos y certificaciones</h2>
-        </div>
-
-
-        <div class="certifications-grid">
-            <div class="cert-card">Java Foundations</div>
-            <div class="cert-card">GitHub Foundations</div>
-            <div class="cert-card">Java Programming</div>
-            <div class="cert-card">Agile Explorer</div>
-        </div>
-
+    <section class="content-section section-shell" id="experience">
+      <div class="section-heading"><p class="eyebrow" data-i18n="experienceKicker">04 / TRAYECTORIA</p><h2 data-i18n="experienceTitle">Experiencia<span>.</span></h2></div>
+      <article class="experience-card">
+        <div class="experience-date" data-i18n="experienceDate">JUN 2024 — SEP 2025</div>
+        <div><h3 data-i18n="experienceRole">Analista de Operaciones TI y Soporte</h3><p class="experience-company">Inetum · Bogotá, Colombia</p><p data-i18n="experienceText">Monitoreo de servicios críticos en ambientes productivos, gestión y escalamiento de incidencias, seguimiento de tareas programadas y soporte a la continuidad operativa. Uso de herramientas de gestión como BMC Helix y Jira.</p></div>
+      </article>
     </section>
 
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-
-        <div class="section-title">
-            <h2>Contacto</h2>
-        </div>
-
-
-        <div class="contact-box">
-
-            <a href="mailto:mgomezg2408@gmail.com" class="contact-btn">
-                <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
-                <span class="contact-text">Email : mgomezg2408@gmail.com</span>
-            </a>
-
-            <a href="https://github.com/mariagomez08" target="_blank" class="contact-btn">
-                <i class="fa-brands fa-github contact-icon" aria-hidden="true"></i>
-                <span class="contact-text">GitHub : https://github.com/mariagomez08</span>
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/maria-de-los-angeles--gomez-guzman-desarrolladora-junior/"
-                target="_blank" class="contact-btn">
-                <i class="fa-brands fa-linkedin-in contact-icon" aria-hidden="true"></i>
-                <span class="contact-text">LinkedIn :
-                    https://www.linkedin.com/in/maria-de-los-angeles--gomez-guzman-desarrolladora-junior/</span>
-            </a>
-
-        </div>
-
+    <section class="content-section section-shell" id="education">
+      <div class="section-heading"><p class="eyebrow" data-i18n="educationKicker">05 / FORMACIÓN</p><h2 data-i18n="educationTitle">Educación y cursos<span>.</span></h2></div>
+      <div class="education-grid">
+        <article class="education-card"><span class="education-year">2026</span><h3 data-i18n="generationTitle">Desarrolladora Full Stack Junior</h3><p>Generation Colombia</p><span class="education-date">Mar 2026 — Jun 2026</span></article>
+        <article class="education-card"><span class="education-year">2024</span><h3 data-i18n="degreeTitle">Ingeniería de Sistemas</h3><p>Universidad de Cartagena</p><span class="education-date">Feb 2018 — Mar 2024</span></article>
+      </div>
+      <div class="certification-strip"><p class="eyebrow" data-i18n="certTitle">CURSOS Y CERTIFICACIONES</p><div class="cert-list"><span>Java Foundations</span><span>GitHub Foundations</span><span>Java Programming</span><span>Agile Explorer</span></div><p class="cert-note" data-i18n="certNote">Nombres según la información disponible; agregar enlaces o entidades emisoras cuando se documenten las credenciales.</p></div>
     </section>
 
-
-    <script src="index.js"></script>
+    <section class="contact-section section-shell" id="contact">
+      <div><p class="eyebrow" data-i18n="contactKicker">06 / HABLEMOS</p><h2 data-i18n="contactTitle">¿Construimos<br><span class="gradient-text">algo útil?</span></h2><p data-i18n="contactText">Estoy abierta a oportunidades junior y conversaciones sobre desarrollo backend.</p></div>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:mgomezg2408@gmail.com">mgomezg2408@gmail.com ↗</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/maria-de-los-angeles--gomez-guzman-desarrolladora-junior/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="button button-secondary" href="https://github.com/mariagomez08" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© <span id="current-year">2026</span> María Gómez Guzmán</span><span data-i18n="footerText">Diseñado y desarrollado con intención.</span><a href="#home" data-i18n="backTop">Volver arriba ↑</a></footer>
 </body>
-
 </html>
